@@ -1,6 +1,6 @@
 "use cilent";
 
-import { DayCard } from "./day.jsx";
+import { DayCard } from "./card.jsx";
 import { SearchIcon } from "./search.js";
 export default function Home() {
   return (
