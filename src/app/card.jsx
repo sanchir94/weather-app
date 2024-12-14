@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Card({ value }) {
   const sun = "sun.png";
   const img = value === "day" ? sun : "nigth.png";
@@ -7,7 +9,7 @@ export function Card({ value }) {
   const colors = value === "day" ? "bg-[#ffffff]" : nightCardColors;
 
   return (
-    <div className="w-[414px] h-[828px] rounded-[48px]  bg-[#1F2937] flex flex-col justify-between  mt-36">
+    <div className="w-[414px] h-[828px] rounded-[48px]  bg-[#1F2937] flex flex-col justify-between mt-[5px]">
       <div
         className={`w-[414px] h-[828px] rounded-[48px] ${colors} flex flex-col justify-between `}
       >
@@ -26,10 +28,10 @@ export function Card({ value }) {
           <p className="font-extrabold text-[24px]">Bright</p>
         </div>
         <div className="flex justify-around items-center mb-6 text-[24px] opacity-60">
-          <i className="fa-solid fa-House"></i>
-          <i className="fa-solid fa-Pin "></i>
-          <i className="fa-solid fa-Heart "></i>
-          <i className="fa-solid fa-User"></i>
+          <Image src="/Home.png" alt="" width={32} height={32} />
+          <Image src="/Pin.png" alt="" width={32} height={32} />
+          <Image src="/Heart.png" alt="" width={32} height={32} />
+          <Image src="/User.png" alt="" width={32} height={32} />
         </div>
       </div>
     </div>
